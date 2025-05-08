@@ -1,0 +1,14 @@
+# .github/workflows/vercel-deploy.yml
+name: Deploy to Vercel (main only)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Vercel deploy hook
+        run: curl -X POST https://api.vercel.com/hooks/deploy/YOUR_DEPLOY_HOOK_ID
