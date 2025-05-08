@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call Vercel deploy hook
-        run: curl -X POST https://api.vercel.com/hooks/deploy/YOUR_DEPLOY_HOOK_ID
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_9xaB8fJxkkWlIqdg8cG96UAu5yUG/SHK5dVWMlm
