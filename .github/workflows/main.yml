@@ -13,4 +13,4 @@ jobs:
         run: sleep 30  # wait 30 seconds
 
       - name: Trigger Vercel deploy hook
-        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_9xaB8fJxkkWlIqdg8cG96UAu5yUG/KIUqa55YaJ
+        run: curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_9xaB8fJxkkWlIqdg8cG96UAu5yUG/KIUqa55YaJ/HOOK_ID?TRIGGER_SOURCE=hook
